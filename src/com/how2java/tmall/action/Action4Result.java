@@ -73,6 +73,6 @@ import org.apache.struts2.convention.annotation.Results;
 
 
 
-public class Action4Result extends Action4Service {
+public class Action4Result extends Action4Parameter  {
 
 }

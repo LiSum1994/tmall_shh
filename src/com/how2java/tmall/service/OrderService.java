@@ -1,5 +1,11 @@
 package com.how2java.tmall.service;
 
+import java.util.List;
+
+import com.how2java.tmall.pojo.Order;
+import com.how2java.tmall.pojo.OrderItem;
+import com.how2java.tmall.pojo.User;
+
 public interface OrderService extends BaseService {
 	public static final String waitPay = "waitPay";
 	public static final String waitDelivery = "waitDelivery";
@@ -8,5 +14,8 @@ public interface OrderService extends BaseService {
 	public static final String finish = "finish";
 	public static final String delete = "delete";	
 	
+	public float createOrder(Order order, List<OrderItem> ois);
+
+	public List<Order> listByUserWithoutDelete(User user);
 	
 }

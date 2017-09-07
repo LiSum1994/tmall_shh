@@ -91,16 +91,6 @@ public class Page {
 		this.param = param;
 	}
 
-	public int last1(){
-		int last;
-		if(0==total%count){
-			last = total-count;
-		}else{
-			last = total - total%count;
-		}
-		
-		last = last<0?0:last;
-		return last;
-	}
+
 	
 }

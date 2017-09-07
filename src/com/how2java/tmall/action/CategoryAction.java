@@ -17,12 +17,13 @@ public class CategoryAction extends Action4Result{
      
     @Action("admin_category_list")
     public String list() {
-       if(page==null)
-    	   page = new Page();
-       int total = categoryService.total();
-       page.setTotal(total);
-       categorys = categoryService.listByPage(page);
-       return "listCategory";
+         
+        if(page==null)
+            page = new Page();
+        int total = categoryService.total();
+        page.setTotal(total);
+        categorys = categoryService.listByPage(page);
+        return "listCategory";
     }
      
     @Action("admin_category_add")

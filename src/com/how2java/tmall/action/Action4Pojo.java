@@ -4,10 +4,12 @@ import java.util.List;
 
 import com.how2java.tmall.pojo.Category;
 import com.how2java.tmall.pojo.Order;
+import com.how2java.tmall.pojo.OrderItem;
 import com.how2java.tmall.pojo.Product;
 import com.how2java.tmall.pojo.ProductImage;
 import com.how2java.tmall.pojo.Property;
 import com.how2java.tmall.pojo.PropertyValue;
+import com.how2java.tmall.pojo.Review;
 import com.how2java.tmall.pojo.User;
 
 
@@ -20,6 +22,8 @@ public class Action4Pojo extends Action4Pagination {
 	protected PropertyValue propertyValue;
 	protected User user;
 	protected Order order;
+	protected Review review;
+	protected OrderItem orderItem;
 	
 	protected List<Category> categorys;
 	protected List<Property> propertys;
@@ -29,7 +33,9 @@ public class Action4Pojo extends Action4Pagination {
 	protected List<PropertyValue> propertyValues;
 	protected List<User> users;
 	protected List<Order> orders;
-
+	protected List<Review> reviews;
+	protected List<OrderItem> orderItems;
+	
 	public Category getCategory() {
 		return category;
 	}
@@ -148,6 +154,38 @@ public class Action4Pojo extends Action4Pagination {
 
 	public void setOrders(List<Order> orders) {
 		this.orders = orders;
+	}
+
+	public Review getReview() {
+		return review;
+	}
+
+	public void setReview(Review review) {
+		this.review = review;
+	}
+
+	public OrderItem getOrderItem() {
+		return orderItem;
+	}
+
+	public void setOrderItem(OrderItem orderItem) {
+		this.orderItem = orderItem;
+	}
+
+	public List<Review> getReviews() {
+		return reviews;
+	}
+
+	public void setReviews(List<Review> reviews) {
+		this.reviews = reviews;
+	}
+
+	public List<OrderItem> getOrderItems() {
+		return orderItems;
+	}
+
+	public void setOrderItems(List<OrderItem> orderItems) {
+		this.orderItems = orderItems;
 	}
 
 	
